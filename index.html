@@ -1,80 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Time tracking dashboard</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <!-- get font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
+  <main>
 
-  Report for
-  Jeremy Robson
+    <header class="header border-rad-15">
+      <div class="report-owner border-rad-15">
+        <img src="./images/image-jeremy.png" alt="">
+        <div class="owner-details">
+          <p class="name-label">Report for</p>
+          <p class="owner-name">Jeremy Robson</p>
+        </div>
+      </div>
+      <ul class="period-selector">
+        <li>
+          <button id="daily">Daily</button>
+        </li>
+        <li>
+          <button id="weekly">Weekly</button>
+        </li>
+        <li>
+          <button id="monthly">Monthly</button>
+        </li>
+      </ul>
+    </header>
 
-  Daily
-  Weekly
-  Monthly
+    <!-- activity cards -->
+    <section class="activities">
 
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
+      <!-- work -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Work</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">32hrs</p>
+            <p class="previous-period">Last week - 36hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
+      <!-- play -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Play</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">8hrs</p>
+            <p class="previous-period">Last week - 10hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
+      <!-- study -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Study</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">4hrs</p>
+            <p class="previous-period">Last week - 7hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
+      <!-- exercise -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Exercise</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">4hrs</p>
+            <p class="previous-period">Last week - 5hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
+      <!-- social -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Social</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">5hrs</p>
+            <p class="previous-period">Last week - 10hrs</p>
+          </div>
+        </div>
+      </div>
 
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
+      <!-- self care -->
+      <div class="card">
+        <div class="content">
+          <div class="content-top">
+            <p class="activity-title">Self Care</p>
+            <button class="more-btn">
+              <img src="./images/icon-ellipsis.svg" alt="additional actions">
+            </button>
+          </div>
+          <div class="content-body">
+            <p class="current-hrs">2hrs</p>
+            <p class="previous-period">Last week - 2hrs</p>
+          </div>
+        </div>
+      </div>
 
-  
+    </section>
+
+  </main>
+
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
 </body>
+
 </html>
