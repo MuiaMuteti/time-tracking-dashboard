@@ -1,0 +1,243 @@
+/* variables */
+
+:root {
+    --primary-blue: hsl(246, 80%, 60%);
+    --primary-light-red-work: hsl(15, 100%, 70%);
+    --primary-soft-blue-play: hsl(195, 74%, 62%);
+    --primary-light-red-study: hsl(348, 100%, 68%);
+    --primary-lime-green-exercise: hsl(145, 58%, 55%);
+    --primary-violet-social: hsl(264, 64%, 52%);
+    --primary-soft-orange-self-care: hsl(43, 84%, 65%);
+    --neutral-very-dark-blue: hsl(226, 43%, 10%);
+    --neutral-dark-blue: hsl(235, 46%, 20%);
+    --neutral-desaturated-blue: hsl(235, 45%, 61%);
+    --neutral-pale-blue: hsl(236, 100%, 87%);
+    --main-font: 'Rubik', sans-serif;
+}
+
+/* resets and base styles */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* color: #1d204b; */
+}
+  
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--main-font);
+    /* padding: 8rem 2.5rem; */
+    background-color: var(--neutral-very-dark-blue);
+    color: white;
+}
+  
+img {
+    max-width: 100%;
+    height: auto;
+}
+  
+button {
+    border: none;
+    background: none;
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+/* utilities */
+
+.border-rad-15 {
+    border-radius: 1.5rem;
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+/* main component */
+main.container {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+}
+
+/* header component */
+
+.header {
+    background-color: var(--neutral-dark-blue);
+}
+
+.report-owner {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--primary-blue);
+    padding: 3rem 2.5rem;
+}
+
+.report-owner img {
+    width: 7rem;
+    height: 7rem;
+
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.name-label {
+    font-size: 1.5rem;
+    color: var(--neutral-pale-blue);
+}
+
+.owner-name {
+    font-weight: 300;
+    font-size: 2.4rem;    
+    margin-top: 0.7rem;
+}
+
+.period-selector {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2.5rem;
+    list-style: none;
+}
+
+.period-btn {
+    color: var(--neutral-desaturated-blue);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.period-btn.active-period {
+    color: white;
+}
+
+.period-btn:hover {
+    color: white;
+}
+
+/* activities section */
+.activities {
+    margin-top: 2.5rem;
+    display: grid;
+    gap: 2.5rem;
+}
+
+.card {
+    background-repeat: no-repeat;
+    background-position: top -1rem right 1.5rem;
+}
+
+.content {
+    padding: 3rem 2.5rem;
+    margin-top: 4rem;
+    background-color: var(--neutral-dark-blue);
+}
+
+.content-top, .content-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.activity-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.more-btn {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.current-hrs,.previous-period {
+    font-weight: 300;
+}
+
+.current-hrs {
+    font-size: 3rem;
+}
+
+.previous-period {
+    color: var(--neutral-pale-blue);
+}
+
+.work {
+    background-color: var(--primary-light-red-work);
+    background-image: url(../images/icon-work.svg);
+}
+
+.play {
+    background-color: var(--primary-soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+}
+
+.study {
+    background-color: var(--primary-light-red-study);
+    background-image: url(../images/icon-study.svg);
+}
+
+.exercise {
+    background-color: var(--primary-lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+}
+
+.social {
+    background-color: var(--primary-violet-social);
+    background-image: url(../images/icon-social.svg);
+}
+
+.self-care {
+    background-color: var(--primary-soft-orange-self-care);
+    background-image: url(../images/icon-self-care.svg);
+}
+
+/* attribution */
+
+.attribution {
+    padding: 0 2.5rem 2.5rem;
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* media queries */
+
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
