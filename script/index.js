@@ -26,7 +26,7 @@ class UI {
     }
 
     setEventListeners() {
-        document.querySelector(".period-selector").
+        document.querySelector("#period-selector").
             addEventListener("click", event => {
                 switch (event.target.id) {
                     case this.DAILY:

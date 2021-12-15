@@ -119,6 +119,7 @@ main.container {
     color: var(--neutral-desaturated-blue);
     font-size: 1.8rem;
     cursor: pointer;
+    transition: color 250ms;
 }
 
 .period-btn.active-period {
@@ -145,6 +146,7 @@ main.container {
     padding: 3rem 2.5rem;
     margin-top: 4rem;
     background-color: var(--neutral-dark-blue);
+    transition: background-color 250ms;
 }
 
 .content:hover {
