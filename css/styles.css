@@ -163,6 +163,7 @@ main.container {
 .activity-title {
     font-size: 1.8rem;
     font-weight: 500;
+    text-transform: capitalize;
 }
 
 .more-btn {
@@ -185,32 +186,37 @@ main.container {
     color: var(--neutral-pale-blue);
 }
 
-.work {
-    background-color: var(--primary-light-red-work);
-    background-image: url(../images/icon-work.svg);
-}
-
-.play {
-    background-color: var(--primary-soft-blue-play);
-    background-image: url(../images/icon-play.svg);
-}
-
-.study {
-    background-color: var(--primary-light-red-study);
-    background-image: url(../images/icon-study.svg);
-}
-
-.exercise {
-    background-color: var(--primary-lime-green-exercise);
-    background-image: url(../images/icon-exercise.svg);
-}
-
-.social {
+.fallback-hours-card {
     background-color: var(--primary-violet-social);
     background-image: url(../images/icon-social.svg);
 }
 
-.self-care {
+.work-hours-card {
+    background-color: var(--primary-light-red-work);
+    background-image: url(../images/icon-work.svg);
+}
+
+.play-hours-card {
+    background-color: var(--primary-soft-blue-play);
+    background-image: url(../images/icon-play.svg);
+}
+
+.study-hours-card {
+    background-color: var(--primary-light-red-study);
+    background-image: url(../images/icon-study.svg);
+}
+
+.exercise-hours-card {
+    background-color: var(--primary-lime-green-exercise);
+    background-image: url(../images/icon-exercise.svg);
+}
+
+.social-hours-card {
+    background-color: var(--primary-violet-social);
+    background-image: url(../images/icon-social.svg);
+}
+
+.self-care-hours-card {
     background-color: var(--primary-soft-orange-self-care);
     background-image: url(../images/icon-self-care.svg);
 }
